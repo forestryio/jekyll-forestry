@@ -4,12 +4,12 @@ frontmatter_file_url_template: "/images"
 body_file_url_template: "/images"
 new_page_extension: md
 auto_deploy: false
-admin_path:
-webhook_url:
+admin_path: 
+webhook_url: 
 collections:
-  _blue:
-    default_front_matter_template: blue-template
-  _red:
-    default_front_matter_template: red-template
   _posts:
     default_front_matter_template: post
+  _red:
+    default_front_matter_template: red-template
+  _blue:
+    default_front_matter_template: blue-template
