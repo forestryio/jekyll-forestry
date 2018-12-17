@@ -1,15 +1,27 @@
 ---
-upload_path: "/images"
-frontmatter_file_url_template: "/images"
-body_file_url_template: "/images"
 new_page_extension: md
 auto_deploy: false
 admin_path: 
 webhook_url: 
-collections:
-  _posts:
-    default_front_matter_template: post
-  _red:
-    default_front_matter_template: red-template
-  _blue:
-    default_front_matter_template: blue-template
+sections:
+- type: jekyll-pages
+  label: Pages
+  create: all
+- type: jekyll-posts
+  label: Posts
+  create: all
+- type: directory
+  path: _blue
+  label: Blue
+  create: all
+  match: "**/*"
+- type: directory
+  path: _red
+  label: Red
+  create: all
+  match: "**/*"
+upload_dir: images
+public_path: "/images"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"

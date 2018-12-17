@@ -1,7 +1,7 @@
 ---
-pages:
-- about.md
+label: page
 hide_body: false
+is_partial: false
 fields:
 - type: text
   name: title
@@ -12,3 +12,5 @@ fields:
 - type: text
   label: Permalink
   name: permalink
+pages:
+- about.md
